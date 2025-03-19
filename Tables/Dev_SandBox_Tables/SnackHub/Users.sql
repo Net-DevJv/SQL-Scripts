@@ -10,6 +10,8 @@ CREATE TABLE [dbo].[Users](
 	[FullName] [nvarchar](150) NOT NULL,
 	[PasswordHash] [nvarchar](max) NOT NULL,
 	[UserType] [int] NOT NULL,
+	[CreationDate] [datetime2](7) NULL,
+	[UpdateDate] [datetime2](7) NULL,
  CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED 
 (
 	[UserId] ASC
