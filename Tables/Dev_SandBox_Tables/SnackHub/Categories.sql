@@ -8,6 +8,8 @@ CREATE TABLE [dbo].[Categories](
 	[CategoryId] [int] IDENTITY(1,1) NOT NULL,
 	[Name] [nvarchar](50) NOT NULL,
 	[Description] [nvarchar](500) NOT NULL,
+	[CreationDate] [datetime2](7) NULL,
+	[UpdateDate] [datetime2](7) NULL,
  CONSTRAINT [PK_Categories] PRIMARY KEY CLUSTERED 
 (
 	[CategoryId] ASC
