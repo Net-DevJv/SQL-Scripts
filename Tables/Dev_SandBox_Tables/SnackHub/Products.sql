@@ -9,10 +9,12 @@ CREATE TABLE [dbo].[Products](
 	[Name] [nvarchar](200) NOT NULL,
 	[Summary] [nvarchar](1000) NULL,
 	[Description] [nvarchar](1000) NULL,
-	[Price] [decimal](10, 2) NOT NULL,
+	[Price] [decimal](10, 2) NULL,
 	[ImageUrl] [nvarchar](max) NULL,
 	[InStock] [bit] NOT NULL,
 	[CategoryId] [int] NULL,
+	[CreationDate] [datetime2](0) NULL,
+	[UpdateDate] [datetime2](0) NULL,
  CONSTRAINT [PK_Products] PRIMARY KEY CLUSTERED 
 (
 	[ProductId] ASC
